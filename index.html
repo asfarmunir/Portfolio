@@ -113,10 +113,10 @@
                             </g>
                         </svg>
                     </div>
-
+                 
                     <div class="home__data">
                         <h1 class="home__title">Hey there, I'm <br> <span style="color: rgba(0, 132, 255, 0.889);">Asfar Munir Asfi</span></h1>
-                        <h3 class="home__subtitle">Mern Stack Developer</h3>
+                        <h3 class="home__subtitle"><span class="type_span"></span></h3>
                         <p class="home__description">I have experience in developing websites using both client-side and 
                             server-side technologies. <br>
                              With a broad skillset and a focus on creating user-friendly interfaces, 
@@ -755,6 +755,30 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <!--==================== Type JS ====================-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.type_span', {
+            typeSpeed: 60,
+            backSpeed: 20,
+            strings: ['I do Frontend Development...', 'I do Backend Development...', 'I do Web Designing...'],
+            smartBackspace: true, // Default value
+            loop: true
+        });
+    </script>
+    <style>
+        .typed-cursor {
+            opacity: 1;
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+            color: blue;
+            font-size: 1.5rem;
+            font-weight: bold;
+        
+}
+    </style>
 </body>
 
 </html>
