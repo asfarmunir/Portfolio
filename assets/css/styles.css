@@ -650,7 +650,7 @@ img {
 }
 /*==================== QUALIFICATION ====================*/
 
-.custom-shape-divider-top-1707037398 {
+s.custom-shape-divider-top-1707037398 {
   position: absolute;
   top: 0;
   left: 0;
@@ -769,7 +769,7 @@ img {
 
 .services__content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: whitesmoke;
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -1491,7 +1491,6 @@ img {
   gap: 40px 10px;
   justify-content: space-evenly;
 }
-
 .portfolio__cards .card {
   position: relative;
   min-width: 360px;
@@ -1568,4 +1567,24 @@ img {
 .card .card_btns .btn:hover {
   background-color: #349dff;
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio__cards .card {
+    min-width: 260px;
+    min-height: 240px;
+  }
+  .card__content .head h3 {
+    font-size: 30px;
+  }
+  .card__content .head {
+    padding: 15px;
+  }
+  .card .card_btns .btn {
+    font-size: 0.65rem;
+    padding: 5px 8px;
+  }
+  .card .card_btns .btn i {
+    display: none;
+  }
 }
