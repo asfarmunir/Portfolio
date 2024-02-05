@@ -78,7 +78,12 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section" id="home" style="padding-left:20px; padding-right: 20px;">
+            <div id="shape_1" class="custom-shape-divider-bottom-1707036767">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
             <div class="home__container container grid">
 
                 
@@ -96,22 +101,37 @@
                         </a>
                     </div>
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <filter id="drop-shadow" x="0" y="0" width="150%" height="150%">
+                                    <feDropShadow dx="4" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.4"/>
+                                </filter>
+                            </defs>
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
-                            <g mask="url(#mask0)">
+                            <g mask="url(#mask0)" filter="url(#drop-shadow)">
+                           
+                                <!-- <animateTransform
+                                    attributeName="transform"
+                                    attributeType="XML"
+                                    type="scale"
+                                    values="1 1; 1.1 1.1; 1 1"
+                                    keyTimes="0; 0.5; 1"
+                                    dur="5s"
+                                    repeatCount="indefinite"
+                                /> -->
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                                 <image class="home__blob-img" x='20' y='22' href="assets/img/first.png" />
                             </g>
                         </svg>
+                        
                     </div>
                  
                     <div class="home__data">
@@ -139,29 +159,40 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">&ltAbout Me&gt</h2>
+        <section class="about section" id="about" style="padding-left:20px; padding-right: 20px;">
+        
+            <div id="shape_2" class="custom-shape-divider-top-1707036939">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+          
+            <div class="custom-shape-divider-bottom-1707050198">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
-            <div class="about__container container grid">
+            <div class="about__container container grid" style="margin-bottom: 60px;">
                 <img class="about__img" src="assets/img/Polish_20221027_223524792 (1).jpg" alt="about" />
                 <div class="about__data">
                     <p class="about__description">
-                        <br> <br> As a Full Mern Stack developer, I have a deep understanding of both front-end and back-end web development technologies. 
-                        I have experience of creating user-friendly and responsive interfaces using <b style="color: rgba(0, 68, 255, 0.889);">React JS, Tailwind CSS </b>and <b style="color: rgba(0, 68, 255, 0.889);"> Typescript </b>
-                        and development of robust and scalable web applications using server-side frameworks like <b style="color: rgba(0, 68, 255, 0.889);">Node.JS</b>.
-                        I have worked with database design and management like <b style="color: rgba(0, 68, 255, 0.889);">MongoDB</b> and <b style="color: rgba(0, 68, 255, 0.889);"> MS Sql</b>   , and i am able to create complex queries to retrieve and manipulate diffrent datasets.</p>
+                        <br> <br> As a seasoned Full MERN Stack developer, I specialize in both front-end and back-end web development. Proficient in crafting user-friendly interfaces using technologies like <b style="color: rgb(28, 146, 255);">React JS</b>, <b style="color: rgb(28, 146, 255);">Tailwind CSS</b>, and <b style="color: rgb(28, 146, 255);">Typescript</b>, I have a knack for creating responsive designs.
+                                <br>
+                        On the back end, I excel in building robust and scalable web applications using <b style="color: rgb(28, 146, 255);">Node.JS</b>. My expertise extends to database design and management, where I've worked with <b style="color: rgb(28, 146, 255);">MongoDB</b> and <b style="color: rgb(28, 146, 255);">MS SQL</b>, showcasing my ability to handle complex queries for data retrieval and manipulation.
                    </p>
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">1.5+ </span>
+                            <span class="about__info-title">2+ </span>
                             <span class="about__info-name">work<br> experience (years)</span>
                         </div>
                         <div>
-                            <span class="about__info-title">10+</span>
+                            <span class="about__info-title">20+</span>
                             <span class="about__info-name">Completed <br>Projects</span>
                         </div>
                         <div>
-                            <span class="about__info-title">2</span>
+                            <span class="about__info-title">3</span>
                             <span class="about__info-name">Companies <br>Worked</span>
                         </div>
                     </div>
@@ -176,8 +207,14 @@
         </section>
 
         <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">&ltExpertise&gt</h2>
+        <section class="skills section" id="skills" style="position: relative; padding-left:30px; padding-right: 30px;" >
+            <div class="custom-shape-divider-top-1707050276">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+         
+            <h2 class="section__title">Expertise</h2>
             <span class="section__subtitle">My Technical Level</span>
             <div class="skills__container container grid">
                 <div>
@@ -194,7 +231,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">React</h3>
+                                    <h3 class="skills__name">React Js</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -212,7 +249,7 @@
                             </div>
                             <div class="skills__data">
                                 <div class="skills__title">
-                                    <h3 class="skills__name">JavaScript</h3>
+                                    <h3 class="skills__name">Next Js</h3>
                                     <span class="skills__number">85%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -300,91 +337,11 @@
                     </div>
                 </div>
             </div>
-            </div>
+            
         </section>
 
-
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">&ltQualification&gt</h2>
-            <span class="section__subtitle">My Academia Journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <!-- <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div> -->
-                </div>
-
-                <div class="qualification__section">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION C 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Matric</h3>
-                                <span class="qualification__subtitle">Computer Science</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                     2017 - 2019
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Bechelors</h3>
-                                <span class="qualification__subtitle">BsCS</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                   2021 - 2025<br> Semesters : 5
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Fsc</h3>
-                                <span class="qualification__subtitle">Computer Science</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 4 ====================-->
-                        
-                    <!--==================== QUALIFICATIONs CONTENT 1 ====================-->
-                  
-                </div>
-            </div>
-        </section>
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-            <h2 class="section__title">&ltServices&gt</h2>
+        <section class="services section" id="services"  style="background-image: url('assets/img/Curve\ Line.svg'); padding-bottom: 80px;">
+            <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What i Offer</span>
             <div class="services__container container grid">
                 <!--==================== SERVICES 1 ====================-->
@@ -400,7 +357,7 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <h4 class="services__modal-title">Frontend Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
@@ -436,7 +393,7 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend <br> Developer</h4>
+                            <h4 class="services__modal-title">Backend Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
@@ -472,7 +429,7 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Branding <br> Designer</h4>
+                            <h4 class="services__modal-title">Branding Designer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
@@ -499,116 +456,263 @@
             </div> 
         </section>
 
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" style="position: relative; padding-bottom: 30px; padding-left:40px; padding-right: 20px;">
+           
+                <div class="custom-shape-divider-top-1707037398">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="custom-shape-divider-bottom-1707037118">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My Academia Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education and Courses
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__section" style="margin-bottom: 60px;">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION C 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Full Stack Developer Course</h3>
+                                <span class="qualification__subtitle">Udemy</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                     2019 - 2020
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Bechelors in Computer science</h3>
+                                <span class="qualification__subtitle">Air University Islamabad</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                   2021 - 2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Mern Stack Development Course</h3>
+                                <span class="qualification__subtitle">Udemy</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 4 ====================-->
+
+                    
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Next JS 14 Mastery</h3>
+                                <span class="qualification__subtitle">Coursera</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                   2023
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATIONs CONTENT 1 ====================-->
+                        
+                    </div>
+                </div>
+            </section>
+            <!--==================== SERVICES ====================-->
+       
+
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">&ltPortfolio&gt</h2>
-            <span class="section__subtitle"> Recent Work</span>
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img class="portfolio__img" src="assets/img/primeplus.png" alt="portfolio1" />
-
-                        <div class="portfolio__data">
-                            <h3 class="port__title"> Prime Plus</h3>
-                            <p class="port__des"> An E-commerce store built in mern stack technology. this project ensure the exquisite user
-                                experience and robust cutting edge backend functionalties.
-                            </p>
-                            <a style="margin-top: 5px;"  class="button button--flex button--small portfolio__button"
-                                href="https://primeplus-emw4iqzpk-asfiiiii.vercel.app/">
-                                Visit our website
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+        <section class="portfolio section" id="portfolio" style="background-image: url('assets/img/Rect\ Light.svg');">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle" style="margin-bottom: 25px;"> Visit my detailed <a href="" style="color: #349dff; font-weight: 600; font-size: 1rem; margin-top: 15px;">Portfolio</a> to check my projects </span>
+            <div class="portfolio__cards">
+                <div class="card" style="background-image:url('./assets/img/prime-card.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
                         </div>
-                    </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img class="portfolio__img" src="assets/img/Yelp.png" alt="portfolio1" />
-
-                        <div class="portfolio__data">
-                            <h3 class="port__title">Yelcamp Project</h3>
-                            <p class="port__des">Yelpcamp is a web App which allows it users to explore the visitng areas and resturants around them 
-                                and check out their ratings and suggestions. 
-                            </p>
-                            <a style="margin-top: 5px;" class="button button--flex button--small portfolio__button"
-                                href="https://github.com/asfiiiii/Exploria.git">
-                                Visit our website
-                                
-                                <i class="uil uil-arrow-right button__icon"></i>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.1rem;"></i>  Check website
                             </a>
-                        </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img class="portfolio__img" src="assets/img/Foodbar.png" alt="portfolio2" />
-
-                        <div class="portfolio__data">
-                            <h3 class="port__title">Foodbar</h3>
-                            <p class="port__des"> Foodbar is a full stack web app with backend routing and front end responsivness.
-                                It allows user to see recipes of their favourite dishes and order it from their nearest 
-                                resturant.
-                            </p>
-                            <a style="margin-top: 5px;" class="button button--flex button--small portfolio__button"
-                                href="https://admirable-dodol-353277.netlify.app/" target="_blank">
-                                Visit our website
-
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                                        <!--==================== PORTFOLIO 2 ====================-->
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img class="portfolio__img" src="assets/img/blogpost.png" alt="portfolio2" />
-
-                        <div class="portfolio__data">
-                            <h3 class="port__title">BlogPost</h3>
-                            <p class="port__des">BlogPost is a full stack project which allows users
-                                to post thier blogs. Users can share thier thoughts in form of words and images. All facilities are provided to users.
-                            </p>
-                            <a class="button button--flex button--small portfolio__button"
-                                href="https://github.com/asfiiiii/BlogPost" target="_blank">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                 
-                    <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img class="portfolio__img" src="assets/img/weather.png" alt="portfolio3" />
-
-                        <div class="portfolio__data">
-                            <h3 class="port__title">WeatherGo</h3>
-                            <p class="port__des"> WeatherGo allows user to users to check weather around diffrent cities of world. It follows the REST API's functionality which fetches 
-                                info from the API of weatherCheck.
-                            </p>
-                            <a style="margin-top: 5px;" class="button button--flex button--small portfolio__button" 
-                             href="https://645a9da5af852328c71795b2--jade-seahorse-a6cda1.netlify.app/">
-                                Visit our website
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.1rem;"></i> Source Code
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                <div class="card" style="background-image:url('./assets/img/evently-card.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>Evenlty</h3>
+                                <p >Events Management</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
+                        </div>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.2rem;"></i>  Check website
+                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.2rem;"></i> Source Code
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                <div class="card" style="background-image:url('./assets/img/kryptic-card.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>Kryptic</h3>
+                                <p >Web 3.0 Blockchain</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
+                        </div>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.2rem;"></i>  Check website
+                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.2rem;"></i> Source Code
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="card" style="background-image: url('assets/img/zinobi-card.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>Zinobi.</h3>
+                                <p >Educational Platform</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
+                        </div>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.2rem;"></i>  Check website
+                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.2rem;"></i> Source Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/iso-card.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>ISOMS.io</h3>
+                                <p >Company Analytics</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
+                        </div>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.2rem;"></i>  Check website
+                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.2rem;"></i> Source Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('assets/img/Foodbar.png');">
+                    <div class="card__content">
+                        <div class="head">
+                            <div style="display: flex; flex-direction: column;">
+                                <h3>Foodbar</h3>
+                                <p >Resturant chain</p>
+                            </div>
+                            <!-- <div style="display: flex; flex-direction: column;">
+                                <h3>Prime Plus</h3>
+                                <p >Ecommerce Store</p>
+                            </div> -->
+                        </div>
+                        <div style="width: 80%; background-color: #349dff; height: 1px;"></div>
+                        <div class="card_btns">
+                            <a class="btn" href="#">
+                                <i class="uil uil-link" style="font-size: 1.2rem;"></i>  Check website
+                            </a>
+                            <button class="btn">
+                                <i class="uil uil-github" style="font-size: 1.2rem;"></i> Source Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="pro section">
+        <section class="pro section" style="padding-left:20px; padding-right: 20px;">
             <div class="pro__bg">
                 <div class="pro__container container grid">
                     <div class="pro__data">
@@ -629,7 +733,7 @@
         
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" style="padding-left:30px; padding-right: 30px;">
             <h2 class="section__title">&ltContact Us&gt</h2>
             <span class="section__subtitle">Get in Touch</span>
 
